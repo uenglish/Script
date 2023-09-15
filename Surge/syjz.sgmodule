@@ -1,0 +1,21 @@
+#!name=鲨鱼记账会员
+#!desc=解锁VIP权限
+#!system=ios
+
+# > 应用名称：鲨鱼记账
+# > 软件版本：4.42
+# > 脚本作者：Serendipity
+# > 微信账号：Serendipity_ify
+# > 解锁说明：解锁VIP权限
+# > 更新时间：2023-09-15
+# > 特别提醒：如需转载请注明出处，谢谢合作！
+# > 特别说明：本脚本仅供学习交流使用，禁止转载售卖
+
+[Script]
+  
+# > 鲨鱼记账☆解锁VIP权限（2023-09-15）@Serendipity
+syjz_VIP = type=http-response, pattern=^http[s]?:\/\/.*\.shayujizhang\.com\/account\/.*$, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/uenglish/Script/main/Js/syjz.js, timeout=60, script-update-interval=0
+
+[MITM] 
+
+hostname = %APPEND% *.shayujizhang.com
