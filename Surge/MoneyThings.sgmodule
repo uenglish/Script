@@ -2,9 +2,6 @@
 #!desc=解锁Pro权限
 
 # > 应用名称：MoneyThings
-# > 软件版本：10.3
-# > 脚本作者：Serendipity
-# > 微信账号：Serendipity_ify
 # > 解锁说明：解锁Pro权限
 # > 更新时间：2023-09-14
 # > 特别提醒：如需转载请注明出处，谢谢合作！
@@ -12,7 +9,6 @@
 
 [Script]
   
-# > MoneyThings☆解锁Pro权限（2023-09-14）@Serendipity
 MoneyThings_Pro = type=http-response, pattern=https?:\/\/api\.revenuecat\.com/v\d/(subscribers/(\$RCAnonymousID\%)?(\w)+|receipts)$, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/uenglish/Script/main/Js/MoneyThings.js, timeout=60, script-update-interval=0
 
 [MITM] 
