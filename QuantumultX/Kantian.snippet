@@ -8,7 +8,7 @@
 
 [rewrite_local]
   
-https:\/\/kantianapi\.geovisearth\.com\/v2\/user\/(ssoLogin$|((mine|guest\/info)\/query\?))$ url script-response-body https://raw.githubusercontent.com/uenglish/Script/main/Js/Kantian.js
+^http[s]?:\/\/kantianapi\.geovisearth\.com\/v2\/user\/(ssoLogin$|((mine|guest\/info)\/query\?))$ url script-response-body https://raw.githubusercontent.com/uenglish/Script/main/Js/Kantian.js
 
 
 [mitm] 
