@@ -9,7 +9,7 @@
 
 [Script]
   
-MoneyThings_Pro = type=http-response, pattern=https?:\/\/api\.revenuecat\.com/v\d/(subscribers/(\$RCAnonymousID\%)?(\w)+|receipts)$, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/uenglish/Script/main/Js/MoneyThings.js, timeout=60, script-update-interval=0
+MoneyThings_Pro = type=http-response, pattern=^https?:\/\/api\.revenuecat\.com/v\d/(subscribers/(\$RCAnonymousID\%)?(\w)+|receipts), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/uenglish/Script/main/Js/MoneyThings.js, timeout=60, script-update-interval=0
 
 [MITM] 
 

@@ -9,8 +9,7 @@
 
 [Script]
   
-Kantian_Pro = type=http-response, pattern=https:\/\/kantianapi\.geovisearth\.com\/v2\/user\/(ssoLogin$|((mine|guest\/info)\/query\?))$, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/uenglish/Script/main/Js/Kantian.js, timeout=60, script-update-interval=0
-
+Kantian_Pro = type=http-response, pattern=^https?:\/\/kantianapi\.geovisearth\.com\/v2\/user\/(ssoLogin$|((mine|guest\/info)\/query\?)), script-path=https://raw.githubusercontent.com/uenglish/Script/main/Js/Kantian.js, requires-body=true, max-size=1, timeout=60
 [MITM] 
 
 hostname = %APPEND% kantianapi.geovisearth.com
