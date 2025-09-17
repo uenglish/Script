@@ -2,8 +2,6 @@ var body = $response.body;
 var url = $request.url;
 var obj = JSON.parse(body);
 
-alert(obj);
-
 obj.msg.isVip = 1;
 obj.msg.isLifeVip = null;
 obj.msg.vipStart = "2025-09-17";
